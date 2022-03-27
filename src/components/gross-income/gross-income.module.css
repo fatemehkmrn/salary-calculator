@@ -1,6 +1,6 @@
 .income {
     padding: 5px;
-    background-color: khaki;
+    background-color: var(--khaki);
     border-radius: 5px;
     margin: 0 20px;
     text-align: center;
