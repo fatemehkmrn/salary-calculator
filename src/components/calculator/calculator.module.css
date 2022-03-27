@@ -1,0 +1,21 @@
+.form {
+    text-align: left;
+    padding: 20px;
+}
+
+.input {
+    display: block;
+    margin-top: 5px;
+}
+
+.field{
+    margin-top: 15px;
+    display: block;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
