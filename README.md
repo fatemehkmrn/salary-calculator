@@ -1,6 +1,24 @@
-# Getting Started with Create React App
+# Code test – Payroll Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a payroll calculator. A user is able to fill in information about their profession and employment in a form and then see what their salary will be after tax.
+
+User will see a form and is able to fill in the following information:
+1. Number of years of experience
+2. Occupation (3 specific choices): 
+  Programmer
+  Teacher
+  Cashier
+3. City (2 specific choices)
+  Stockholm
+  Gothenburg
+4. Income year (2 specific choices)
+  2020
+  2019
+
+# About the projrct:
+This project is built in React and TypeScript.
+Besides, there are a number of unit tests which control the functioality of calculations and empty fields error display.
+
 
 ## Available Scripts
 
