@@ -5,17 +5,29 @@
 
 .input {
     display: block;
-    margin-top: 5px;
+    margin-top: 7px;
+    background-color: khaki;
+    border: none;
+    border-radius: 10px;
+    min-height: 20px;
+    padding: 0 5px;
+    min-width: 175px;
 }
 
-.field{
+.field {
     margin-top: 15px;
     display: block;
+}
+
+.radio {
+    margin-top: 10px;
+    display: block;
+    font-size: 15px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 50px;
+    padding: 0 45px;
 }
