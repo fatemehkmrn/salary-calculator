@@ -23,6 +23,7 @@ const Calculator: React.FC<{}> = () => {
 
   return (
     <div className={s.container}>
+      <p className={s.title}>Enter your data and press Calculate button to see your payrol!</p>
       <form
         className={s.form}
         onSubmit={handleSubmit((data) => calculate(data))}
