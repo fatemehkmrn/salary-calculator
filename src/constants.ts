@@ -19,5 +19,13 @@ export const basicIncomeAmount:IBasicIncomeAmount ={
   };
 
   export const fields = ['Developer', 'Teacher', 'Cashier'];
+
   export const cities = ['Stockholm', 'Gothenburg'];
+
   export const years = ['2019', '2020'];
+
+  export const salariesLimit = {
+    normal: 36000,
+    high: 45000,
+  }
+

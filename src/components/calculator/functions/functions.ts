@@ -1,4 +1,4 @@
-import { basicIncomeAmount, raiseAmount, taxRates } from '../../../constants';
+import { basicIncomeAmount, raiseAmount, taxRates, salariesLimit } from '../../../constants';
 import { Cities, Fields, Years, IData } from '../../../types';
 
 export const raiseCalculator = (experience: number): number => {
@@ -26,13 +26,17 @@ export const raiseCalculator = (experience: number): number => {
     const basicSalary: number = basicIncomeAmount[field as Fields];
     const salary: number = raiseCalculator(experience) * basicSalary;
     const taxRate: number = taxRates[location as Cities][year as Years];
-    if (salary <= 36000) {
+    if (salary <= salariesLimit.normal) {
       finalIncome = salary * (1 - taxRate);
-    } else if (salary > 36000 && salary < 45000) {
-      finalIncome = 36000 * (1 - taxRate) + (salary - 36000) * 0.5;
+    } else if (salary > salariesLimit.normal && salary < salariesLimit.high) {
+      finalIncome =
+        salariesLimit.normal * (1 - taxRate) +
+        (salary - salariesLimit.normal) * 0.5;
     } else {
-      finalIncome = 36000 * (1 - taxRate) + 9000 * 0.5 + (salary - 45000) * 0.3;
+      finalIncome =
+        salariesLimit.normal * (1 - taxRate) +
+        (salariesLimit.high - salariesLimit.normal) * 0.5 +
+        (salary - salariesLimit.high) * 0.3;
     }
     return finalIncome;
   };
-  
