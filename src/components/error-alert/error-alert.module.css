@@ -1,4 +1,4 @@
 .alert {
-    color: --var(red);
+    color: var(--red);
     font-size: 10px;
 }
